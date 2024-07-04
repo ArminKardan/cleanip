@@ -30,5 +30,6 @@ else
   # echo "The path $NEW_PATH has been added to ~/.bashrc to be permanent."
 fi
 
+
 echo Use cleanip to check if your network is clean or not."
 

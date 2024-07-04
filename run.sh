@@ -17,12 +17,9 @@ EOF
 # Make the new script executable
 chmod +x $output_script
 
-# Optionally, run the new script to verify it works
-./$output_script
 
 
-
-NEW_PATH=$(realpath "/etc/cleanip/cleanip.sh")
+NEW_PATH=$(realpath "/etc/cleanip")
 # Check if the path is already in the PATH
 if [[ ":$PATH:" == *":$NEW_PATH:"* ]]; then
   echo "The path $NEW_PATH is already in the PATH."
@@ -32,3 +29,6 @@ else
   echo "export PATH=\$PATH:$NEW_PATH" >> ~/.bashrc
   echo "The path $NEW_PATH has been added to ~/.bashrc to be permanent."
 fi
+
+echo Use cleanip to check if your network is clean or not."
+

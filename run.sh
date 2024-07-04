@@ -19,7 +19,7 @@ chmod +x $output_script
 
 
 
-NEW_PATH=$(realpath "/etc/cleanip")
+NEW_PATH="/etc/cleanip"
 # Check if the path is already in the PATH
 if [[ ":$PATH:" == *":$NEW_PATH:"* ]]; then
   echo "The path $NEW_PATH is already in the PATH."

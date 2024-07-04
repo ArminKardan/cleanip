@@ -31,5 +31,5 @@ else
 fi
 
 
-echo Use cleanip to check if your network is clean or not."
+echo "Use cleanip to check if your network is clean or not."
 
